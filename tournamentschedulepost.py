@@ -1,0 +1,13 @@
+title = input("Whats the tournament name\n")
+server = input("What server will the tournament be on\n")
+kitFormat = input("Whats the kit (Nodebuff etc 1v1/2v2 etc)\n")
+timeAndDate = input("Whats the time and date example: 1st Jan (Saturday)\n")
+prize = input("Whats the prize\n")
+bracketLink = input("Whats the bracket link\n")
+
+print("**",title,"**\n")
+print("**-** *", server, "*\n")
+print("**-** *", kitFormat, "*\n")
+print("**-** *", timeAndDate, "*\n")
+print("**-** *", prize, "*\n")
+print("**-**", bracketLink, "\n")
