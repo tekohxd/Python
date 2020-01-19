@@ -19,13 +19,11 @@ while True:
     if keyboard.is_pressed('esc'):
         exit("Cancelled by user input . .")
 
-    randomw = ''.join(random.choice(string.ascii_lowercase) for i in range(5))
+    randomw = ''.join(random.choice(string.ascii_lowercase + string.digits) for i in range(6))
 
-    keyboard.write(randomw)
-
-    keyboard.press_and_release('ctrl+v')
-    keyboard.press_and_release('enter')
+    keyboard.write("https://prnt.sc/" + randomw)
+    keyboard.press_and_release("enter")
 
     print("wrote", randomw, "\n")
 
-    time.sleep(0.2)
+    time.sleep(7)

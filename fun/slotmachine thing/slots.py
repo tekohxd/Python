@@ -31,7 +31,7 @@ def checkUserDuplicate(userToCheck):
             return False
     userdata.close()
     return True
-    
+
 def start():
     print("-----")
     print("Welcome to Tekoh slot machine")
