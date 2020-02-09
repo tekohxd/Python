@@ -15,17 +15,19 @@ print("Press and hold escape while running to cancel . .")
 time.sleep(3)
 
 while True:
-
-    if keyboard.is_pressed('esc'):
+    
+    if keyboard.is_pressed("esc"):
         exit("Cancelled by user input . .")
 
-    randomw = ''.join(random.choice(string.ascii_lowercase + string.digits) for i in range(6))
+    if keyboard.is_pressed('w'):
+
+        randomw = ''.join(random.choice(string.ascii_lowercase + string.digits) for i in range(5))
 
     #keyboard.write("https://prnt.sc/" + randomw)
     #keyboard.press_and_release("enter")
     
-    webbrowser.open_new_tab("https://prnt.sc/" + randomw)
+        webbrowser.open_new_tab("https://prnt.sc/n" + randomw)
 
-    print("wrote", randomw, "\n")
+        print("wrote", randomw, "\n")
 
-    time.sleep(3)
+        time.sleep(0.5)
